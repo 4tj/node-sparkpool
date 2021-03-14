@@ -197,5 +197,6 @@ declare module 'node-sparkpool' {
 
   export default function (options?: {
     endpoint?: string
+    timeout?: number
   }): SparkPool
 }
