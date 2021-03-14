@@ -1,0 +1,42 @@
+{
+  "name": "node-sparkpool",
+  "version": "1.0.0",
+  "description": "Sparkpool.com Node API Client",
+  "main": "dist",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "babel src -d dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/4tj/node-sparkpool.git"
+  },
+  "keywords": [
+    "sparkpool"
+  ],
+  "author": "4tj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/4tj/node-sparkpool/issues"
+  },
+  "homepage": "https://github.com/4tj/node-sparkpool#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "eslint": "^7.22.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "rimraf": "^3.0.2"
+  }
+}
