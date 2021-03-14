@@ -1,6 +1,6 @@
 import client from './client'
 
-export default (options = { endpoint: 'https://www.sparkpool.com' }) => client(options)
+export default (options = { endpoint: 'https://www.sparkpool.com', timeout: 1000 }) => client(options)
 
 export const ResponseCodes = {
   200: 'success',

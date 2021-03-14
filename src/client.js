@@ -1,9 +1,9 @@
 import axios from 'axios'
 
-function request ({ endpoint }) {
+function request ({ endpoint, timeout }) {
   const instance = axios.create({
     baseURL: endpoint,
-    timeout: 1000
+    timeout
   })
   instance.interceptors.response.use((response) => {
     if (response.data?.code !== 200) {
