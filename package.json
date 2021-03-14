@@ -3,6 +3,10 @@
   "version": "1.0.5",
   "description": "Sparkpool.com Node API Client",
   "main": "dist",
+  "files": [
+    "dist",
+    "index.d.ts"
+  ],
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "babel src -d dist",
@@ -15,7 +19,7 @@
   "keywords": [
     "sparkpool"
   ],
-  "author": "4tj",
+  "author": "4tj <doublleft@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/4tj/node-sparkpool/issues"
