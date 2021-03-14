@@ -14,7 +14,8 @@ const client = Sparkpool()
 
 // if you want use diffent endpoint
 const client2 = Sparkpool({
-  endpoint: 'https://www.sparkpool.com'
+  endpoint: 'https://www.sparkpool.com',
+  timeout: 5000 // http request timeout
 })
 
 client.poolStats().then(data => console.log(data))
