@@ -22,7 +22,7 @@ function request ({ endpoint, timeout }) {
 export default options => {
   const endpoint = (options && options.endpoint) || ENDPOINT
   const timeout = (options && options.timeout) || TIMEOUT
-  const apiRequest = request({ ...options, endpoint, timeout )
+  const apiRequest = request({ ...options, endpoint, timeout })
   return {
     currencyStats: (params) => apiRequest.get('/v1/currency/stats', { params }),
     currencyStatsHistory: (params) => apiRequest.get('/v1/currency/statsHistory', { params }),
