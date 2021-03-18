@@ -4,7 +4,7 @@
   "description": "Sparkpool.com Node API Client",
   "main": "dist",
   "files": [
-    "dist",
+    "dist/",
     "index.d.ts"
   ],
   "scripts": {

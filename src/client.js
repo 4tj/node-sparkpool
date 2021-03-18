@@ -1,5 +1,8 @@
 import axios from 'axios'
 
+const ENDPOINT = 'https://antpool.com'
+const TIMEOUT = 5000
+
 function request ({ endpoint, timeout }) {
   const instance = axios.create({
     baseURL: endpoint,
@@ -17,7 +20,9 @@ function request ({ endpoint, timeout }) {
 }
 
 export default options => {
-  const apiRequest = request(options)
+  const endpoint = (options && options.endpoint) || ENDPOINT
+  const timeout = (options && options.timeout) || TIMEOUT
+  const apiRequest = request({ ...options, endpoint, timeout )
   return {
     currencyStats: (params) => apiRequest.get('/v1/currency/stats', { params }),
     currencyStatsHistory: (params) => apiRequest.get('/v1/currency/statsHistory', { params }),
