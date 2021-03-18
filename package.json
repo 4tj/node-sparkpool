@@ -1,6 +1,6 @@
 {
   "name": "node-sparkpool",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Sparkpool.com Node API Client",
   "main": "dist",
   "files": [
