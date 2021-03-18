@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const ENDPOINT = 'https://antpool.com'
+const ENDPOINT = 'https://www.sparkpool.com'
 const TIMEOUT = 5000
 
 function request ({ endpoint, timeout }) {
