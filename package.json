@@ -1,10 +1,10 @@
 {
   "name": "node-sparkpool",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Sparkpool.com Node API Client",
   "main": "dist",
   "files": [
-    "dist/",
+    "dist",
     "index.d.ts"
   ],
   "scripts": {
