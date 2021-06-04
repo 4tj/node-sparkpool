@@ -1,11 +1,5 @@
 declare module 'node-sparkpool' {
 
-  export enum ResponseCodes {
-    200 = 'success',
-    302 = 'invalid parameters',
-    500 = 'server error'
-  }
-
   export interface CurrencyStats {
     poolHashrate?: string
     income?: number
